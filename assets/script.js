@@ -1,37 +1,44 @@
 /*Call to jQuery to ensure that code isn't run until the browser has finished 
 rendering all the elements in the html*/
 $(document).ready(function () {
-
-  $(function () {
+ 
+    //Display current date and time in the header of the page
+    $("#currentDay").text(dayjs().format("dddd, MMM DD, YYYY - h:mm:ss a"))
 
     //Listener for click events on the save button
     $(".saveBtn").on("click", function() {
-      var userInputFields = $(this).siblings(".description").val();
+      var userInput = $(this).siblings(".description").val();
       var inputTimeBlock = $(this).parent().attr("id");
 
       //Save user input and corresponding time-block data to local storage
-      localStorage.setItem(inputTimeBlock, userInputFields)
+      localStorage.setItem(inputTimeBlock, userInput);
 
+      //Display confirmation message when user clicks save button
       $(".save-confirmation").css("visibility", "visible");
+
       setTimeout(function() { 
         $(".save-confirmation").css("visibility", "hidden");
-    }, 2000)
-
-      // $("calendar-container").
+      }, 2000)
     });
 
     /*Get any user input that was saved in localStorage and set the 
     values of the corresponding textarea elements*/
-    $("#hour9 .description").val(localStorage.getItem("hour9"));
-    $("#hour10 .description").val(localStorage.getItem("hour10"));
-    $("#hour11 .description").val(localStorage.getItem("hour11"));
-    $("#hour12 .description").val(localStorage.getItem("hour12"));
-    $("#hour13 .description").val(localStorage.getItem("hour13"));
-    $("#hour14 .description").val(localStorage.getItem("hour14"));
-    $("#hour15 .description").val(localStorage.getItem("hour15"));
-    $("#hour16 .description").val(localStorage.getItem("hour16"));
-    $("#hour17 .description").val(localStorage.getItem("hour17"));
-    $("#hour18 .description").val(localStorage.getItem("hour18"));
+    $("#hour-9 .description").val(localStorage.getItem("hour-9"));
+    $("#hour-10 .description").val(localStorage.getItem("hour-10"));
+    $("#hour-11 .description").val(localStorage.getItem("hour-11"));
+    $("#hour-12 .description").val(localStorage.getItem("hour-12"));
+    $("#hour-13 .description").val(localStorage.getItem("hour-13"));
+    $("#hour-14 .description").val(localStorage.getItem("hour-14"));
+    $("#hour-15 .description").val(localStorage.getItem("hour-15"));
+    $("#hour-16 .description").val(localStorage.getItem("hour-16"));
+    $("#hour-17 .description").val(localStorage.getItem("hour-17"));
+
+
+    //Clear local storage at midnight and reload page to allow new day scehduling
+    // if (dayjs("h:mm:ss") >= "0:00:00") {
+    //   localStorage.clear();
+    //   window.location.reload();
+    // }
 
 
     /*Apply the past, present, or future class to each timeblock by 
@@ -53,24 +60,20 @@ $(document).ready(function () {
         }
 
         else if (timeBlock === currentHour) {
-          $(this).addClass("present");
           $(this).removeClass("past");
+          $(this).addClass("present");
           $(this).removeClass("future");
         }
 
         else {
-          $(this).addClass("future");
           $(this).removeClass("present");
           $(this).removeClass("past");
+          $(this).addClass("future");
         }
       })
     }
 
   //Call function to display current date and time
   identifyTimePhase();
- 
-  // TODO: Add code to display the current date in the header of the page.
-  $("#currentDay").text(dayjs().format("dddd, MMM DD, YYYY - h:mm:ss a"))
 
-  });
-})
+  })
