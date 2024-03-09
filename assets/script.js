@@ -68,11 +68,17 @@ $(document).ready(function () {
     }
 
 
-    //Clear local storage at midnight and reload page to allow new day scehduling
-    if (currentHour >= "10:55:00") {
-      localStorage.clear();
-    }
-
+    //Clear local storage and reload page when user clicks "Click to Clear Schedule" button
+    $(function () {
+      $("#clear_appointments").click(function (event) {
+      if (confirm("Are you sure you would like to clear the schedule?")) {
+      window.localStorage.clear();
+      window.location.reload();
+      }
+      else {}
+      })
+    })
+    
 
   //Call function to display current date and time
   identifyTimePhase();
