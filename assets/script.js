@@ -34,23 +34,17 @@ $(document).ready(function () {
     $("#hour-17 .description").val(localStorage.getItem("hour-17"));
 
 
-    //Clear local storage at midnight and reload page to allow new day scehduling
-    // if (dayjs("h:mm:ss") >= "0:00:00") {
-    //   localStorage.clear();
-    //   window.location.reload();
-    // }
+    //Pull current hour using DayJS
+    var currentHour = dayjs().hour();
 
 
     /*Apply the past, present, or future class to each timeblock by 
     comparing the id to the current hour*/
     function identifyTimePhase() {
 
-      //Pull current hour using DayJS
-      var currentHour = dayjs().hour();
-
       //Loop to compare each time block hour to current hour
       $(".time-block").each(function () {
-        var timeBlock = parseInt($(this).attr("id").split("hour")[1]);
+        var timeBlock = parseInt($(this).attr("id").split("hour-")[1]);
 
         //Apply class styles based on if statements
         if (timeBlock < currentHour) {
@@ -60,18 +54,25 @@ $(document).ready(function () {
         }
 
         else if (timeBlock === currentHour) {
-          $(this).removeClass("past");
           $(this).addClass("present");
+          $(this).removeClass("past");
           $(this).removeClass("future");
         }
 
         else {
+          $(this).addClass("future");
           $(this).removeClass("present");
           $(this).removeClass("past");
-          $(this).addClass("future");
         }
       })
     }
+
+
+    //Clear local storage at midnight and reload page to allow new day scehduling
+    if (currentHour >= "10:55:00") {
+      localStorage.clear();
+    }
+
 
   //Call function to display current date and time
   identifyTimePhase();

@@ -1,16 +1,27 @@
+:root {
+  --past_color: #d3d3d3d4;
+  --present_color: #ff6961bd;
+  --future_color: #77dd77c1;
+  --button_color: #43b8d2;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  background-color: #d3d3d3;
+  background-color: var(--past_color);
 }
 
 /*Header Style*/
 header {
-  color: #06aed5;
+  color: var(--button_color);
+}
+
+header h1 {
+  text-decoration: 4px underline var(--present_color) dotted;
 }
 
 #currentDay {
-  text-decoration: 4px overline #ff6961 dotted;
+  color: var(--present_color);
 }
 
 /*Local Storage Save Confirmation Style*/
@@ -55,17 +66,17 @@ textarea {
 
 /*Time Block Color Styles*/
 .past {
-  background-color: #d3d3d3;
+  background-color: var(--past_color);
   color: white;
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: var(--present_color);
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: var(--future_color);
   color: white;
 }
 
@@ -75,7 +86,7 @@ textarea {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+  background-color: var(--button_color);
   color: white;
 }
 
