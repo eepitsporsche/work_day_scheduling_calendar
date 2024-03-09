@@ -12,6 +12,11 @@ header {
   text-decoration: 4px overline #ff6961 dotted;
 }
 
+.save-confirmation {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 textarea {
   background: transparent;
   border: none;
