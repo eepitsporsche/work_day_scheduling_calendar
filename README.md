@@ -26,6 +26,8 @@ Opening the [Work Day Scheduling Calendar](https://eepitsporsche.github.io/work_
 
 For each hour of the work day, a user may add custom text and save it by clicking the save icon directly right of the text field.
 
+When user input has successfully been saved, a confirmation message will appear at the top of the page.
+
 Each hour block will be color-coded to indicate an hour that has passed (shown in grey), the present hour (shown in red), and an hour that has not yet come to pass (shown in green).
 
 Data saved to the schedule will be stored and persist on the page until the user clicks the "Clear Schedule" button found at the bottom of the page.
