@@ -28,13 +28,15 @@ For each hour of the work day, a user may add custom text and save it by clickin
 
 Each hour block will be color-coded to indicate an hour that has passed (shown in grey), the present hour (shown in red), and an hour that has not yet come to pass (shown in green).
 
-**\*The user should note that data saved to the schedule will be stored and persist on the page until the user clicks the "Clear Schedule" button.**
+Data saved to the schedule will be stored and persist on the page until the user clicks the "Clear Schedule" button found at the bottom of the page.
 
-<p align="center"><img src="" alt="Work Day Scheduling Calendar"></p>
+**\*The user should note that clicking the "Clear Schedule" button removes ALL data from the schedule.**
+
+<p align="center"><img src="./assets/work_day_schedule_calendar.gif" alt="Work Day Scheduling Calendar"></p>
 
 ## Requirements
 
-To operate the Work Day Scheduling Calendar, a user must have a browser that supports Javascript and has it enabled.
+To operate the Work Day Scheduling Calendar, a user must have a browser that supports JavaScript and has it enabled.
 
 ## Technologies Used
 
@@ -57,9 +59,9 @@ Built with:
 
 * [JQuery](https://api.jquery.com/click/) was referred to for information on the <code>.click()</code> method.
 
-* [mdn web docs_](https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow) was referred to for text shadow effect usage
+* [mdn web docs_](https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow) was referred to for text shadow effect usage.
 
-* [Stack Overflow](https://stackoverflow.com/questions/45919179/how-to-make-confirm-dialog-box-after-button-click) was utilized for creating the JQuery <code>confirm</code> dialog box.
+* [Stack Overflow](https://stackoverflow.com/questions/45919179/how-to-make-confirm-dialog-box-after-button-click) was utilized for creating the jQuery <code>confirm</code> dialog box.
 
 * [w3 Schools](https://www.w3schools.com/jsref/jsref_parseint.asp#:~:text=The%20parseInt%20method%20parses%20a,%22%2C%20JavaScript%20assumes%20radix%2016.) was utilized for information on the <code>parseInt()</code> method.
 
