@@ -5,6 +5,10 @@
   --button_color: #43b8d2;
 }
 
+*:focus {
+  outline-color: var(--button_color);
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -24,24 +28,20 @@ header h1 {
   color: var(--present_color);
 }
 
-/*Clear Appointments Button Style*/
-#clear_schedule {
-  display: inline-block;
-  font-size: 16px;
-  color: white;
-  background-color: var(--button_color);
-  transition-duration: 0.4s;
-  padding: 1%;
-  margin-top: 1%;
-  text-align: center;
-  border: none;
-  border-radius: 6px;
-}
-
 /*Local Storage Save Confirmation Style*/
 .save-confirmation {
   text-align: center;
   margin-bottom: 20px;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 5%;
+}
+
+span {
+  padding: 3px 5px 3px 5px;
+  background-color: var(--button_color);
+  font-size: 20px;
+  border-radius: 1%;
 }
 
 /*User Input Field Block Style*/
@@ -107,4 +107,18 @@ textarea {
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
+}
+
+/*Clear Appointments Button Style*/
+#clear_schedule {
+  display: inline-block;
+  font-size: 20px;
+  color: white;
+  background-color: var(--button_color);
+  transition-duration: 0.4s;
+  padding: 1% 2% 1% 2%;
+  margin-top: 1%;
+  text-align: center;
+  border: none;
+  border-radius: 6px;
 }

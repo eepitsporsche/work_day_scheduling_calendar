@@ -2,17 +2,17 @@
 
 ## Table of Contents
 
-* [Description]()
-* [Usage]()
-* [Requirements]()
-* [Technologies Used]()
-* [Third Party APIs]()
-* [Credits]()
-* [License]()
+* [Description](#description)
+* [Usage](#usage)
+* [Requirements](#requirements)
+* [Technologies Used](#technologies-used)
+* [Third Party APIs](#third-party-apis)
+* [Credits](#credits)
+* [License](#license)
 
 ## Description
 
-The Work Day Scheduling Calendar web application utilizes Day.JS library to capture the user's local time and present a schedule of the current work day hours wherein the user may add custom text for events by hour.
+The Work Day Scheduling Calendar web application utilizes the Day.JS library to capture the user's local time and present a schedule of the current work day hours wherein the user may add and save custom text for events by hour.
 
 The events saved in the schedule are stored in the browser's <code>localStorage</code> and persist on the page upon reloading.
 
@@ -22,7 +22,7 @@ Possible future improvements to this may include a feature such as use of cookie
 
 ## Usage
 
-Opening the [Work Day Scheduling Calendar]() webpage presents the user with the current date and time in red text at the top of the page. A seperate block for each of the work day hours (9:00AM - 5:00PM) can be viewed by scrolling down the page.
+Opening the [Work Day Scheduling Calendar](https://eepitsporsche.github.io/work_day_scheduling_calendar/) webpage presents the user with the current date and time in red text at the top of the page. A seperate block for each of the work day hours (9:00AM - 5:00PM) can be viewed by scrolling down the page.
 
 For each hour of the work day, a user may add custom text and save it by clicking the save icon directly right of the text field.
 
@@ -39,9 +39,9 @@ To operate the Work Day Scheduling Calendar, a user must have a browser that sup
 ## Technologies Used
 
 Built with:
-* HTML 5
+* HTML5
 * Advanced CSS
-* Javascript
+* JavaScript
 * [jQuery](https://jquery.com/)
 * [Bootstrap](https://getbootstrap.com/)
 
@@ -69,3 +69,5 @@ Built with:
 
 ## License
 N/A
+
+### <p align="center">[Back to Top](#work-day-scheduling-calendar)</p>
