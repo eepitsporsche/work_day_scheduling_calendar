@@ -57,7 +57,7 @@ Built with:
 
 ## Credits
 
-* [JQuery](https://api.jquery.com/click/) was referred to for information on the <code>.click()</code> method.
+* [jQuery](https://api.jquery.com/click/) was referred to for information on the <code>.click()</code> method.
 
 * [mdn web docs_](https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow) was referred to for text shadow effect usage.
 
