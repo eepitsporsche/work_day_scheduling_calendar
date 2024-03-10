@@ -17,7 +17,7 @@ header {
 }
 
 header h1 {
-  /* text-decoration: 4px underline var(--present_color) dotted; */
+  text-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em white;
 }
 
 #currentDay {
@@ -25,7 +25,7 @@ header h1 {
 }
 
 /*Clear Appointments Button Style*/
-#clear_appointments {
+#clear_schedule {
   display: inline-block;
   font-size: 16px;
   color: white;

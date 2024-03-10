@@ -70,7 +70,7 @@ $(document).ready(function () {
 
     //Clear local storage and reload page when user clicks "Click to Clear Schedule" button
     $(function () {
-      $("#clear_appointments").click(function (event) {
+      $("#clear_schedule").click(function (event) {
       if (confirm("Are you sure you would like to clear the schedule?")) {
       window.localStorage.clear();
       window.location.reload();
