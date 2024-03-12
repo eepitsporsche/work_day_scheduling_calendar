@@ -12,7 +12,7 @@
 
 ## Description
 
-The Work Day Scheduling Calendar web application utilizes the Day.JS library to capture the user's local time and present a schedule of the current work day hours wherein the user may add and save custom text for events by hour.
+The Work Day Scheduling Calendar web application utilizes the Day.js library to capture the user's local time and present a schedule of the current work day hours wherein the user may add and save custom text for events by hour.
 
 The events saved in the schedule are stored in the browser's <code>localStorage</code> and persist on the page upon reloading.
 
