@@ -34,7 +34,7 @@ Data saved to the schedule will be stored and persist on the page until the user
 
 **\*The user should note that clicking the "Clear Schedule" button removes ALL data from the schedule.**
 
-<p align="center"><img src="./assets/work_day_schedule_calendar.gif" alt="Work Day Scheduling Calendar"></p>
+<p align="center"><img src="./assets/images/work_day_schedule_calendar.gif" alt="Work Day Scheduling Calendar"></p>
 
 ## Requirements
 
